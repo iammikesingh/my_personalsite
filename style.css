@@ -1,0 +1,288 @@
+html,
+body,
+.cover{
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.cover{
+	background: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=2689&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+	background-size: cover;
+}
+
+#name{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.coverText{
+	padding-top: 100px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+#button{
+	border-radius: 100px;
+}
+
+#btnGroup{
+	padding-top: 50px;
+}
+
+.btn-group {
+	padding-top: 200px;
+}
+
+.learn-more{
+	font-size: 0.33em;
+	padding-top: 10px;
+}
+
+
+h3{
+	font-weight: bold;
+	font-size: 2.5em;
+	padding: 20px;
+}
+
+#skills{
+	background: #EEEEEE;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+.info{
+	padding-bottom: 25px;
+}
+
+
+#myProjects{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #001f3f;
+}
+
+#myProjects h3{
+	color: white;
+	padding-bottom: 40px;
+}
+
+.description{
+	font-size: 0.7em;
+}
+
+
+
+#imageShot{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.content-text a:hover{
+	color: green;
+	font-weight: bold;
+}
+
+.content-text{
+	margin-top: -50px !important;
+}
+
+#footer{
+	background: #EEEEEE;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+#together{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+
+span{
+	font-size: 0.5em;
+}
+
+.handcrafted{
+	color: white;
+}
+
+
+.icons{
+	background: #001f3f;
+	padding-top: 60px;
+}
+
+a:hover{
+	color: green;
+}
+
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    .typewriter p{
+    	font-size: 0.5em;
+    }
+
+    .lead{
+    	font-size: 0.7em;
+    }
+
+    .btn-group {
+		padding-top: 50px;
+	}
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    .lead{
+    	font-size: 1em;
+    	font-weight: bold;
+    }
+
+    .btn-group {
+		padding-top: 50px;
+	}
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+
+
